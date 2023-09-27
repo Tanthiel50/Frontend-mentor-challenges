@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(./fonts/Outfit-VariableFont_wght.ttf) format("ttf");
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);  
+
+    --border_radius: 30px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: var(--Light_gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_section{
+        background-color: var(--White);
+        width: 350px;
+        border-radius: var(--border_radius);
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+        padding: 15px;
+}
+
+.image_section img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.text_section{
+    padding: 25px 10px;
+}
+
+h1{
+    font-size:25px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--Dark_blue);
+}
+
+p{
+    font-size: 15px;
+    text-align:center;
+    font-weight: 500;
+    color: var(--Grayish_blue);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
