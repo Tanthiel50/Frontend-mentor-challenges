@@ -1,0 +1,159 @@
+:root{
+
+    /* Primary */
+    --pale_blue: hsl(225, 100%, 94%);
+    --bright_blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --desatured_blue: hsl(224, 23%, 55%);
+    --dark_blue: hsl(223, 47%, 23%);
+
+    /* padding */
+    --large_padding: 30px;
+    --medium_padding: 20px;
+    --small_padding: 15px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: var(--pale_blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p{
+    font-size: 16px;
+}
+
+.main_section{
+    background-color: var(--very_pale_blue);
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--medium_padding);
+}
+
+.hero_section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; 
+}
+
+.order_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--large_padding);
+}
+
+.order_section h1{
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.order_section p{
+    padding-top: var(--medium_padding);
+    padding-bottom: var(--medium_padding);
+    color: var(--desatured_blue);
+}
+
+.plan_section{
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--large_padding);
+}
+
+.plan_section img{
+    padding-right: var(--medium_padding);
+}
+
+.plan_link{
+    padding-left: var(--large_padding);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--dark_blue);
+}
+
+.plan_link:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--desatured_blue);
+}
+
+.plan_detail{
+    font-size: 15px;
+}
+
+.plan_detail :first-child{
+    font-weight: 700;
+}
+
+.plan_detail :last-child {
+    color: var(--desatured_blue);
+}
+
+.payment_section{
+    background-color: var(--bright_blue);
+    width: 85%;
+    text-align: center;
+    padding-top: var(--small_padding);
+    padding-bottom: var(--small_padding);
+    border-radius: var(--small_padding);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--very_pale_blue);
+    font-size: 16px;
+    box-shadow: 0px 15px 20px 0px #c2d1ff;
+}
+
+.payment_section:hover{
+    background-color: var(--desatured_blue);
+    cursor: pointer;
+}
+
+.cancel_section{
+    text-decoration: none;
+    width: 85%;
+    text-align: center;
+    padding-top: var(--large_padding);
+    padding-bottom: var(--large_padding);
+    border-radius: var(--small_padding);
+    font-weight: 700;
+    color: var(--desatured_blue);
+}
+
+.cancel_section:hover{
+    color: var(--dark_blue);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Mobile: 375px
+- Desktop: 1440px */
