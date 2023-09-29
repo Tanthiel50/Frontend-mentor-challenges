@@ -1,0 +1,42 @@
+:root{
+    /* Primary */
+    --dark_cyan: hsl(185, 75%, 39%);
+    --very_dark_desaturated_blue:hsl(229, 23%, 23%);
+    --dark_grayish_blue:hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark_gray:hsl(0, 0%, 59%);
+
+    /* padding */
+    --large_padding: 30px;
+    --medium_padding: 20px;
+    --small_padding: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html{
+    height: 100%;
+    background-color: var(--dark_cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-size: 18px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
