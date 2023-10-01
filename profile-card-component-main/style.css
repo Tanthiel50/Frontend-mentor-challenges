@@ -24,39 +24,32 @@
 
 html{
     height: 100%;
-    background-color: var(--dark_cyan);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 body{
-    font-size: 18px;
+    background-color: var(--dark_cyan);
     height: 100%;
+}
+
+.app{
+    height: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.bubble_background{
-    position: relative;
-    width: 100%;
-    /* height: 100vh; */
 }
 
 .top_bubble{
     position: absolute;
-    left: -800px;
-    top: -700px;
+    left: -23%;
+    top: -40%;
     z-index: 1;
 }
 
 .bottom_bubble{
     position: absolute;
-    left: 100px;
-    top: 300px;
+    left: 50%;
+    top: 50%;
     z-index: 1;
 }
 
