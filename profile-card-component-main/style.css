@@ -8,9 +8,10 @@
     --dark_gray:hsl(0, 0%, 59%);
 
     /* padding */
+    --half_padding: 50%;
     --large_padding: 30px;
     --medium_padding: 20px;
-    --small_padding: 15px;
+    --small_padding: 10px;
 }
 
 *{
@@ -32,7 +33,116 @@ html{
 
 body{
     font-size: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.bubble_background{
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.top_bubble{
+    position: absolute;
+    left: -800px;
+    top: -700px;
+    z-index: 1;
+}
+
+.bottom_bubble{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    z-index: 1;
+}
+
+.main_section{
+    position: relative;
+    z-index: 6;
+    background-color: white;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--medium_padding);
+}
+
+.hero_section{
+    position: relative;
+    height: 150px;
+}
+
+.hero_section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; 
+}
+
+.profile_picture{
+    position: relative;
+    top: -10%;
+}
+
+.profile_picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--half_padding);
+    border: 5px solid white;
+}
+
+.identity_section{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-bottom: var(--small_padding);
+    color: var(--dark_grayish_blue);
+}
+
+.name_section{
+    font-weight: 700;
+    font-size: large;
+    padding-right: var(--small_padding);
+    color: var(--very_dark_desaturated_blue);
+}
+
+.city{
+    font-size: medium;
+    color: var(--very_dark_desaturated_blue);
+    padding-bottom: var(--large_padding);
+}
+
+.kpi_section{
+    display: flex;
+    border-top: 1px solid var(--dark_gray);
+    width: 100%;
+    justify-content:space-around;
+    margin-right: var(--medium_padding);
+    margin-left: var(--medium_padding);
+    color: var(--very_dark_desaturated_blue);
+    margin-bottom: var(--large_padding);
+}
+
+#kpi{
+    text-align: center;
+    margin-top: var(--large_padding);
+}
+
+#kpi_number{
+    font-weight: 700;
+    font-size: larger;
+}
+
+#kpi_name{
+    font-size:small;
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
