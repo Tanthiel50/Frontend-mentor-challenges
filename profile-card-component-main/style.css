@@ -27,22 +27,33 @@ html{
 }
 
 body{
-    background-color: var(--dark_cyan);
     height: 100%;
 }
 
 .app{
-    height: 98%;
+    position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.background_section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: var(--dark_cyan);
+    overflow: hidden;
+}
+
 .top_bubble{
     position: absolute;
-    left: -23%;
-    top: -40%;
+    right: 50%;
+    bottom: 40%;
     z-index: 1;
 }
 
